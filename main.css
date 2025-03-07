@@ -1,0 +1,40 @@
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+  background-color: #e9ecef;
+}
+
+.colorpicker.colorpicker-popup {
+  -moz-user-select: none;
+}
+
+.out-list .out {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.out-list .out.css {
+  margin-bottom: 0;
+}
+
+.out-list .out div {
+  flex-grow: 1;
+  position: relative;
+}
+
+.out-list .out div > span {
+  content: attr(title);
+  position: absolute;
+  bottom: -15px;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.out-list .out div > span::selection {
+  color: white;
+  background: #444;
+}
